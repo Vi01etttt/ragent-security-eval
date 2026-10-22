@@ -1,0 +1,28 @@
+# Security eval: poisoned / injected documents are never published.
+# Only the schema, metric code and aggregated results go into the repo.
+eval/security/attacks/
+eval/security/poisoned_kb/
+knowledge_base_poisoned/
+**/*.poisoned.md
+**/*_poisoned.*
+
+# Course materials (not redistributable)
+knowledge_base/
+
+# Runtime outputs and local ids
+eval/runs/
+eval/reports/
+**/doc_id_map.json
+**/kb_ids.json
+**/intent_ids.json
+**/_backup_*/
+
+# Python / env / editor
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+.idea/
